@@ -2,9 +2,15 @@ package com.gs.model.product;
 
 import java.util.List;
 
-public class ProductModel {
-	private String uid;
-	private String name;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.gs.model.BaseModel;
+
+@Entity
+@Table(name = ProductModel.TABLE_NAME)
+public class ProductModel  extends BaseModel {
+	public static final String TABLE_NAME = "Product";
 	private List<StockLevelModel> stockLevels;
 	private List<PriceRowModel> priceRows;
 	

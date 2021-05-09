@@ -1,5 +1,10 @@
 package com.gs.model.order;
 
-public class AbstractOrderModel {
+import javax.persistence.MappedSuperclass;
+
+import com.gs.model.BaseModel;
+
+@MappedSuperclass
+public class AbstractOrderModel extends BaseModel {
 
 }

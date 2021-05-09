@@ -1,5 +1,12 @@
 package com.gs.model.order;
 
-public class CartEntryModel {
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = CartEntryModel.TABLE_NAME)
+public class CartEntryModel  extends AbstractOrderEntryModel {
+	
+	public static final String TABLE_NAME = "CartEntry";
 
 }

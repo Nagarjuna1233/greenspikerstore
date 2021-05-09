@@ -1,9 +1,16 @@
 package com.gs.model.product;
 
-public class StockLevelModel {
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.gs.model.BaseModel;
+
+@Entity
+@Table(name = StockLevelModel.TABLE_NAME)
+public class StockLevelModel  extends BaseModel {
 	
-	private String uid;
-	private String name;
+	public static final String TABLE_NAME = "StockLevel";
+	
 	private double quantity;
 
 }

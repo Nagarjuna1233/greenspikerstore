@@ -1,5 +1,10 @@
 package com.gs.model;
 
-public class CurrencyModel {
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = CurrencyModel.TABLE_NAME)
+public class CurrencyModel  extends BaseModel {
+	public static final String TABLE_NAME = "Currency";
 }
