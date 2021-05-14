@@ -13,7 +13,6 @@ public class BaseModel {
 	private String name;
 	private Date createdTime;
 	private Date modifiedTime;
-	private String displayName;
 
 	public String getUid() {
 		return uid;
@@ -47,12 +46,5 @@ public class BaseModel {
 		this.modifiedTime = modifiedTime;
 	}
 	
-	public String getDisplayName() {
-		return displayName;
-	}
-
-	public void setDisplayName(String displayName) {
-		this.displayName = displayName;
-	}
 
 }

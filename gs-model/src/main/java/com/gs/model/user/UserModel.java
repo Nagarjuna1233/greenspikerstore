@@ -1,5 +1,5 @@
 package com.gs.model.user;
 
-public class UserModel {
+public class UserModel extends PrinicipalModel{
 
 }
