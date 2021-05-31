@@ -13,4 +13,14 @@ public class StockLevelModel  extends BaseModel {
 	
 	private double quantity;
 
+	public double getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(double quantity) {
+		this.quantity = quantity;
+	}
+	
+	
+
 }

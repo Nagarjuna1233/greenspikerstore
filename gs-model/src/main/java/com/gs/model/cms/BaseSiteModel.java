@@ -20,5 +20,32 @@ public class BaseSiteModel extends BaseModel {
 	private CatalogModel previewContentCatalog;
 	private LanguageModel defaultLanguage;
 	private BaseSiteThemEnum them;
+	
+	public List<BaseStoreModel> getBaseStores() {
+		return baseStores;
+	}
+	public void setBaseStores(List<BaseStoreModel> baseStores) {
+		this.baseStores = baseStores;
+	}
+	public CatalogModel getPreviewContentCatalog() {
+		return previewContentCatalog;
+	}
+	public void setPreviewContentCatalog(CatalogModel previewContentCatalog) {
+		this.previewContentCatalog = previewContentCatalog;
+	}
+	public LanguageModel getDefaultLanguage() {
+		return defaultLanguage;
+	}
+	public void setDefaultLanguage(LanguageModel defaultLanguage) {
+		this.defaultLanguage = defaultLanguage;
+	}
+	public BaseSiteThemEnum getThem() {
+		return them;
+	}
+	public void setThem(BaseSiteThemEnum them) {
+		this.them = them;
+	}
+	
+	
 
 }

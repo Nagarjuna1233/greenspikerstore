@@ -13,5 +13,31 @@ public class CustomerModel extends UserModel {
 	private Collection<PhoneNumber> phoneNumbers;
 	private Collection<CartModel> carts;
 	private Collection<OrderModel> orders;
+	public UserType getUserType() {
+		return userType;
+	}
+	public void setUserType(UserType userType) {
+		this.userType = userType;
+	}
+	public Collection<PhoneNumber> getPhoneNumbers() {
+		return phoneNumbers;
+	}
+	public void setPhoneNumbers(Collection<PhoneNumber> phoneNumbers) {
+		this.phoneNumbers = phoneNumbers;
+	}
+	public Collection<CartModel> getCarts() {
+		return carts;
+	}
+	public void setCarts(Collection<CartModel> carts) {
+		this.carts = carts;
+	}
+	public Collection<OrderModel> getOrders() {
+		return orders;
+	}
+	public void setOrders(Collection<OrderModel> orders) {
+		this.orders = orders;
+	}
+	
+	
 
 }

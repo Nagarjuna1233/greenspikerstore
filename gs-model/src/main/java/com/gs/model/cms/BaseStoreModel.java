@@ -21,5 +21,37 @@ public class BaseStoreModel extends BaseModel {
 	private CurrencyModel defaultCurrency;
 	private boolean net;
 	private TaxGroupEnum taxGroup;
+	public List<BaseStoreModel> getBaseSites() {
+		return baseSites;
+	}
+	public void setBaseSites(List<BaseStoreModel> baseSites) {
+		this.baseSites = baseSites;
+	}
+	public CatalogModel getPreviewProductCatalog() {
+		return previewProductCatalog;
+	}
+	public void setPreviewProductCatalog(CatalogModel previewProductCatalog) {
+		this.previewProductCatalog = previewProductCatalog;
+	}
+	public CurrencyModel getDefaultCurrency() {
+		return defaultCurrency;
+	}
+	public void setDefaultCurrency(CurrencyModel defaultCurrency) {
+		this.defaultCurrency = defaultCurrency;
+	}
+	public boolean isNet() {
+		return net;
+	}
+	public void setNet(boolean net) {
+		this.net = net;
+	}
+	public TaxGroupEnum getTaxGroup() {
+		return taxGroup;
+	}
+	public void setTaxGroup(TaxGroupEnum taxGroup) {
+		this.taxGroup = taxGroup;
+	}
+	
+	
 
 }

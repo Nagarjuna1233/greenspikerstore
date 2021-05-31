@@ -14,6 +14,14 @@ public class WarehouseModel  extends BaseModel {
 	public static final String TABLE_NAME = "Warehouse";
 
 	private List<StockLevelModel> stockLevels;
+
+	public List<StockLevelModel> getStockLevels() {
+		return stockLevels;
+	}
+
+	public void setStockLevels(List<StockLevelModel> stockLevels) {
+		this.stockLevels = stockLevels;
+	}
 	
 	
 }

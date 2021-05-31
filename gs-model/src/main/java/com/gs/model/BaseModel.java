@@ -1,18 +1,14 @@
 package com.gs.model;
 
-import java.util.Date;
-
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
-public class BaseModel {
+public class BaseModel extends RootModel {
 	
 	@Id
 	private String uid;
 	private String name;
-	private Date createdTime;
-	private Date modifiedTime;
 
 	public String getUid() {
 		return uid;
@@ -30,21 +26,6 @@ public class BaseModel {
 		this.name = name;
 	}
 
-	public Date getCreatedTime() {
-		return createdTime;
-	}
-
-	public void setCreatedTime(Date createdTime) {
-		this.createdTime = createdTime;
-	}
-
-	public Date getModifiedTime() {
-		return modifiedTime;
-	}
-
-	public void setModifiedTime(Date modifiedTime) {
-		this.modifiedTime = modifiedTime;
-	}
 	
 
 }

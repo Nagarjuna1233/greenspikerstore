@@ -21,5 +21,56 @@ public class AbstractOrderModel extends BaseModel {
 	private Collection<DiscountValue> orderDiscountValues;
 	private boolean recalculated;
 	private UserModel user;
+	
+	public Collection<AbstractOrderEntryModel> getEntries() {
+		return entries;
+	}
+	public void setEntries(Collection<AbstractOrderEntryModel> entries) {
+		this.entries = entries;
+	}
+	public BigDecimal getTotalPrice() {
+		return totalPrice;
+	}
+	public void setTotalPrice(BigDecimal totalPrice) {
+		this.totalPrice = totalPrice;
+	}
+	public BigDecimal getSubTotal() {
+		return subTotal;
+	}
+	public void setSubTotal(BigDecimal subTotal) {
+		this.subTotal = subTotal;
+	}
+	public TaxValue getTaxValue() {
+		return taxValue;
+	}
+	public void setTaxValue(TaxValue taxValue) {
+		this.taxValue = taxValue;
+	}
+	public DiscountValue getDiscountValue() {
+		return discountValue;
+	}
+	public void setDiscountValue(DiscountValue discountValue) {
+		this.discountValue = discountValue;
+	}
+	public Collection<DiscountValue> getOrderDiscountValues() {
+		return orderDiscountValues;
+	}
+	public void setOrderDiscountValues(Collection<DiscountValue> orderDiscountValues) {
+		this.orderDiscountValues = orderDiscountValues;
+	}
+	public boolean isRecalculated() {
+		return recalculated;
+	}
+	public void setRecalculated(boolean recalculated) {
+		this.recalculated = recalculated;
+	}
+	public UserModel getUser() {
+		return user;
+	}
+	public void setUser(UserModel user) {
+		this.user = user;
+	}
+	
+	
 
 }

@@ -16,4 +16,19 @@ public class CatalogVersionModel extends BaseModel {
 	private CatalogModel catelog;
 	private Version version;
 	
+	public CatalogModel getCatelog() {
+		return catelog;
+	}
+	public void setCatelog(CatalogModel catelog) {
+		this.catelog = catelog;
+	}
+	public Version getVersion() {
+		return version;
+	}
+	public void setVersion(Version version) {
+		this.version = version;
+	}
+	
+	
+	
 }
